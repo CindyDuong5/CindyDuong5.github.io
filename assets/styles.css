@@ -1,0 +1,55 @@
+/* Global styles */
+html {
+  margin:  auto;
+  max-width: 1024px;
+  width: 95%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Set  font family, size, background color and text color */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  background-color: #F0B0C0;
+  color: #392b44;
+}
+.text-body-secondary {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.text-body-secondary-declaration{
+  text-align: justify;
+  font-size: 10px;
+}
+
+
+/* Set header style */
+header {
+  background-color: #b23b6b;
+  padding: 10px;
+}
+
+.blinking-text {
+  animation: blink 3s linear infinite;
+}
+
+@keyframes blink {
+  70% { opacity: 0; }
+}
+h1.fw-light {
+  color: #ca135e;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-body {
+  height: 110px; /* set a fixed height for the card body */
+}
+
+.card-img-top {
+  height: 300px; /* adjust the image height to match the card body height */
+  object-fit: cover; /* ensure the image fills the container without distortion */
+  object-position: center; /* center the image within the container */
+}

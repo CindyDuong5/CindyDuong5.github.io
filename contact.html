@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cindy Duong</title>
+     <!--Using Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+      <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/styles.css" type="text/css" />
+  </head> 
+    <body>
+    <header data-bs-theme="light">
+      <!-- Navbar -->
+      <div class="collapse text-bg-light" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <!-- About Section -->
+              <h4>About</h4>
+              <p class="text-body-secondary">
+                Hi there! My name is Cindy. I'm a Back-end developer who loves to explore the world, hike through beautiful landscapes, try new attractions and indulge in different cuisines. When I'm not coding, I enjoy creating content for my YouTube and TikTok channels.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>Basic Information</h4>
+              <ul class="list-unstyled">
+                <li>Managed social media content</li>
+                <li>Experienced in content creation</li>
+                <li>Proficient in C/C++, HTML, Java.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-light bg-light shadow-sm">
+        <div class="container">
+           <!-- Contact Section -->
+          <a href="/HTML/contact.html" class="text-bg-light">
+            <i class="fa fa-phone"></i><strong> Contact Me</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <!-------------------Form------------------->
+    <main id="main">
+    <form id="myform" class="needs-validation" action="https://httpbin.org/post" method="post" novalidate>
+      <div class="row g-3">
+        <!-- First Name -->
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">First name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            placeholder=""
+            value=""
+            required
+            name="firstName"
+          />
+        </div>
+        <!-- Last Name -->
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">Last name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            placeholder=""
+            value=""
+            required
+            name="LastName"
+          />
+        </div>
+        <!-- Email -->
+        <div class="col-12">
+          <label for="email" class="form-label"
+            >Email</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="username@example.com"
+            name="email"
+          />
+        </div>
+        <!-- Address -->
+        <div class="col-12">
+          <label for="address" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            placeholder="1234 Main St"
+            required
+            name="address"
+          />
+        </div>
+        <!-- City -->
+        <div class="col-md-3">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" list="cities">
+          <datalist id="cities">
+            <option value="Toronto">
+            <option value="Montreal">
+            <option value="Vancouver">
+            <option value="Calgary">
+            <option value="Ottawa">
+            <option value="Edmonton">
+            <option value="Quebec City">
+            <option value="Winnipeg">
+            <option value="Hamilton">
+            <option value="Halifax">
+            <option value="London">
+            <option value="Kitchener">
+            <option value="Victoria">
+            <option value="Saskatoon">
+            <option value="Regina">
+            <option value="St. John's">
+            <option value="Charlottetown">
+            <option value="Fredericton">
+          </datalist>
+        </div>
+        
+        <!-- Province -->
+        <div class="col-md-2">
+          <label for="Province" class="form-label">Province</label>
+          <select class="form-select" id="Province" required>
+            <option value="">Choose...</option>
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Manitoba</option>
+            <option>New Brunswick</option>
+            <option>Newfoundland and Labrador</option>
+            <option>Nova Scotia</option>
+            <option>Ontario</option>
+            <option>Prince Edward Island</option>
+            <option>Quebec</option>
+            <option>Saskatchewan</option>
+            <option>Northwest Territories</option>
+            <option>Nunavut</option>
+            <option>Yukon</option>
+            <option>Saskatchewan</option>
+            <option>Quebec</option>
+            <option>British Columbia</option>
+            <option>Alberta</option>
+            <option>Manitoba</option>
+            <option>Ontario</option>
+            <option>Nova Scotia</option>
+            <option>New Brunswick</option>
+            <option>Prince Edward Island</option>
+            <option>Newfoundland and Labrador</option>
+          </select>
+        </div>
+        
+        <!-- Postal Code -->
+        <div class="col-md-2">
+          <label for="PostalCode" class="form-label">Postal Code</label>
+          <input
+            type="text"
+            class="form-control"
+            id="PostalCode"
+            placeholder=""
+            required
+            name="postalcode"
+          />
+        </div>
+        <!-- Purpose of this message -->
+        <br>
+        <div class="radio-btns">
+            <label for="purpose">What is the purpose of this message?</label><br><br>
+            <input type="radio" id="question" name="purpose" value="question">
+            <label for="question">Question</label><br>
+            <input type="radio" id="comment" name="purpose" value="comment">
+            <label for="comment">Comment</label><br>
+            <input type="radio" id="hiring" name="purpose" value="hiring">
+            <label for="hiring">Hiring</label>
+        </div>
+        <br>
+
+        <!-- Message -->
+        <div class="col-md-2">
+          <label for="message">Message for me:</label>
+          <textarea name="message" id="message" placeholder="Enter your message..." class="address" style="height: 200px; width: 500px;"></textarea>
+        </div>
+        
+        <!-- Field of work selection -->   
+        <div class="col-md-12">
+          <label for="field" class="form-label">What is your field of work?</label>
+          <select class="form-select" id="field" required>
+            <option value="">Choose...</option>
+            <option value="Art and Design">Art and Design</option>
+            <option value="Business and Management">Business and Management</option>
+            <option value="Education">Education</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Finance">Finance</option>
+            <option value="Government and Public Administration">Government and Public Administration</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Hospitality and Tourism">Hospitality and Tourism</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Law and Public Safety">Law and Public Safety</option>
+            <option value="Marketing and Sales">Marketing and Sales</option>
+            <option value="Media and Communications">Media and Communications</option>
+            <option value="Nonprofit and Social Services">Nonprofit and Social Services</option>
+            <option value="Research">Research</option>
+            <option value="Retail">Retail</option>
+            <option value="Science and Mathematics">Science and Mathematics</option>
+            <option value="Transportation and Logistics">Transportation and Logistics</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>  
+        <!-- Buttons -->
+        <div class="col-md-4">
+          <button class="btn btn-primary" type="submit" data-toggle="tooltip" data-placement="top" title="Submit your form">Submit</button>
+          <button class="btn btn-warning" type="reset">Reset</button>
+        </div>
+        <div class= "alert-danger mt-4" id="error"></div> <!-- Error message -->
+    </form>
+</main>
+    
+    <script src="/assets/script.js"></script>
+  </body> 
+</html>
