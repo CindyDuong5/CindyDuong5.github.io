@@ -53,10 +53,3 @@ h1.fw-light {
   object-fit: cover; /* ensure the image fills the container without distortion */
   object-position: center; /* center the image within the container */
 }
-
-  /* Adjust image size for smaller screens */
-  @media only screen and (max-width: 768px) {
-    #photo {
-      width: 50%;
-    }
-  }
