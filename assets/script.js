@@ -173,11 +173,3 @@ function nullChecker(element, elementName) {
     return result;
 }
 
-// Ensures that all the characters in the input field are alphabets
-function areAlphabets(element, message) {
-    let validRegex = /^[A-Za-z\s]+$/;
-    if (!(element.value.match(validRegex))) {
-        messages.push(message);
-    }
-}
-
