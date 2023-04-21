@@ -54,13 +54,6 @@ h1.fw-light {
   object-position: center; /* center the image within the container */
 }
 
-  /* Default image size */
-  #photo {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   /* Adjust image size for smaller screens */
   @media only screen and (max-width: 768px) {
     #photo {
